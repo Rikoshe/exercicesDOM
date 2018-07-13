@@ -1,3 +1,10 @@
+var colorSelection = getElementsByClassName("color choice");
+var clickBox = getElementsByClassName("color");
+clickBox.onClick("colorChange");
+function colorChange (){
+    clickBox.style.backgroundColor = colorSelection.style.backgroundColor;
+    colorChange ();
+}
 
 
 
